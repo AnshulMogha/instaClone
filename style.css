@@ -1,0 +1,208 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    font-size: .87rem;
+    text-wrap: wrap;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+#wrapper
+{
+    width:100vw;
+    background-color: white;
+}
+#main-container
+{
+    max-width: 350px;
+    margin: 50px auto;
+}
+.border
+{
+    border: solid 1px rgb(210, 210, 210);
+}
+#main-container>div
+{
+    margin-bottom:3%;
+}
+#logo
+{
+    background-image: url("icon image/Instagram_logo.svg");
+    background-repeat: no-repeat;
+    width: 55%;
+    height: 70px;
+    background-size:contain;
+    margin: 10% auto;
+}
+#info-form>input
+{
+    display: block;
+    margin: 2% auto;
+    padding: 3%;
+    width: 75%;
+    border-radius: 4px;
+    background-color: rgb(249, 249, 249);
+}
+#info-form>input:focus
+{
+    outline: 0px;
+    border:solid 1px rgb(150, 150, 150) ;
+}
+#info-form>button
+{
+    display: block;
+    width: 75%;
+    margin: 5% auto;
+    border-radius: 10px;
+    padding: 2.5%;
+    font-size: 1.2em;
+    font-weight:1000;
+    border: 0px;
+    background-color:rgb(0, 164, 255);
+    color: white;
+}
+#info-form>button:hover{
+    background-color:rgb(0, 128, 255);
+}
+#hori-rule
+{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    height: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#hori-rule > div:first-child,#hori-rule > div:last-child{
+    height: .1px;
+    width: 40%;
+    background-color: rgb(210, 210, 210);
+}
+#hori-rule > div:first-child + div
+{
+    font-weight: bolder;
+    color: rgb(100, 100, 100);
+}
+#fb-link
+{
+    width: 75%;
+    margin: 5% auto; 
+}
+#fb-link>a
+{
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+}
+#fb-link img{
+
+    width: 7%;
+}
+
+#fb-link span{
+    font-size: 1.2em;
+    margin-left:3% ;
+    color: #014478;
+}
+#main-container>div:first-child>div:last-child
+{
+    width: 75%;
+    text-align: center;
+    margin: 5% auto;
+}
+.blues{
+    color: #014478;
+}
+.sign-up{
+    font-size: 1em;
+    font-weight: bold;
+    color: rgb(0, 164, 255);
+    margin: 2%;
+}
+#main-container>div:first-child+div
+{
+    text-align: center;
+    padding: 7%;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+#get-from p
+{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    padding: 5%;
+    font-size: 1.2em;
+    
+}
+#get-from div
+{
+    width:75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.google
+{   
+    width:55% ;
+    margin-right:2%;
+}
+.microsoft
+{
+    width: 45%;
+}
+#get-from div a img
+{
+    width: 100%;
+}
+nav
+{
+    width: 70%;
+    margin: auto;
+}
+nav a{
+    color: rgb(100, 100, 100);
+    text-wrap: nowrap;
+}
+nav ul
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding:0px;
+}
+nav ul li
+{
+    margin: 8px;
+}
+.active-link:active
+{
+    opacity: .5;
+}
+.hover-link:hover
+{
+    text-decoration:underline;
+}
+@media screen and (max-width:450px) {
+    .border
+    {
+        border: none;
+    }
+    #info-form>input {
+        border: solid rgb(210, 210, 210) 1px;
+    }
+    #logo{
+        margin: 5% auto;
+    }
+    nav ul li
+    {
+    margin: 6px;
+    }
+    
+}
+
+
